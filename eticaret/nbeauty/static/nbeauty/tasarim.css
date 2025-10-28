@@ -1,0 +1,14 @@
+body{
+  background-image: url("/static/nbeauty/arkaplan.png");
+}
+
+.navbar{
+   background-color: lightpink !important; 
+}
+.navbar .navbar-brand,
+.navbar .nav-link{
+   color: #ffffff !important;
+}
+.navbar .nav-link.active{
+   font-weight: 600;
+}
