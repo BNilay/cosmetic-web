@@ -1,5 +1,9 @@
 body{
   background-image: url("/static/nbeauty/arkaplan.png");
+  font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    line-height: 1.6;
 }
 
 .navbar{
@@ -11,4 +15,138 @@ body{
 }
 .navbar .nav-link.active{
    font-weight: 600;
+}
+
+/* NOT: Poppins fontunu HTML <head> kısmına eklemeyi unutmayın! */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> */
+
+/* 1. FONT VE GENEL GÖRÜNÜM (Aynı kalabilir) */
+
+/* 2. BAŞLIK STİLİ (Pembe Vurgulu) */
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #4a4a4a; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    /* *********** BURADA DEĞİŞTİRİLDİ *********** */
+    text-align: center; /* Başlık metnini ortala */
+    border-left: none; /* Sol çizgiyi kaldır */
+    /* ******************************************* */
+    
+    letter-spacing: 0.5px;
+}
+h2 {
+   font-size: 2.8rem;
+    color: #4a4a4a; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+/* 3. AKORDİYON KAPSAYICISI VE ÖĞELERİ (ARKA PLAN DESTEĞİ İÇİN OPAK) */
+.accordion {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    border: none;
+    /* Akordiyonun hafif saydam olması, arka plan görselini hafifçe geçirir */
+    background-color: rgba(255, 255, 255, 0.95); /* %95 opak beyaz */
+    border-radius: 12px;
+    /* Daha belirgin ama yumuşak bir gölge */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: transparent; /* Akordiyon item'ları kapsayıcıdan saydamlık alsın */
+    transition: background-color 0.3s;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/* 4. AKORDİYON BAŞLIK BUTONU (YUMUŞAK TONLAR) */
+.accordion-button {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 1.2rem 1.5rem;
+    color: #555;
+    background-color: transparent; /* Buton da saydam olsun */
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 0;
+}
+
+.accordion-button:hover {
+    /* Hafif pembe ile hover rengi */
+    background-color: #fffafc;
+    color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+    /* Açık halde, temanızın ana rengini kullanın */
+    color: #e91e63; /* Canlı pembe vurgu */
+    background-color: #fce4ec; /* Açık pembe arka plan */
+    box-shadow: none;
+    border-bottom: 1px solid #ffb6c1; /* Pembe ayırıcı çizgi */
+}
+
+/* 5. AKORDİYON İÇERİĞİ (BODY) */
+.accordion-body {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    color: #4a5568;
+    background-color: #ffffff; /* İçerik okunaklı kalması için tam beyaz */
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Rutin Başlıkları (Morning, Evening, Weekly) */
+.accordion-body strong {
+    color: #e91e63; /* Pembe vurguyu burada da kullan */
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-left: 3px solid #ffb6c1; /* Uyumlu pembe çizgi */
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* İpuçları/Ek Notlar (Temaya uygun pembe not kutusu) */
+.accordion-body em {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #fef5f9; /* Çok açık pembe arka plan */
+    border-left: 4px solid #e91e63; /* Canlı pembe vurgu çizgisi */
+    color: #8a3356;
+    border-radius: 4px;
+}
+.carousel {
+    width: 800px;
+    margin: auto;
+    
+}
+
+.carousel {
+    
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.carousel-inner {
+max-width: 100%;
+margin: auto;
+}
+.carousel img{
+    max-width: 100%; 
+    height: auto; 
+}
+
+footer{
+   height: 5px;
 }

@@ -6,5 +6,9 @@ app_name='nbeauty'
 urlpatterns = [
     path('',views.home,name='home'), 
     path('routines/',views.routines,name='routines'),
+    path('cleanser/',views.cleanser,name='cleanser'),
+    path('moisturizer/',views.moisturizer,name='moisturizer'),
+    path('serum/',views.serum,name='serum'),
+    path('toner/',views.toner,name='toner'),
 
 ]

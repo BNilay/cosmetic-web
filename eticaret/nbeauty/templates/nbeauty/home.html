@@ -1,5 +1,97 @@
 {%extends "base.html" %}
 
 {%block content%}
-<h1>home</h1>
+
+<h2>Gentle Skincare for Real People
+Personalized routines designed to match your skin </h2>
+<h2>— not the trends.</h2>
+{% load static %}
+
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5" style="color:#4a4a4a;">What Our Users Say</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <blockquote class="blockquote p-4 shadow-sm border-0" style="background-color:#fffafc; border-radius:10px;">
+          <p class="mb-3">“My skin feels calm and soft — no irritation anymore!”</p>
+          <footer class="blockquote-footer mt-2">Selin, 28</footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-4">
+        <blockquote class="blockquote p-4 shadow-sm border-0" style="background-color:#fffafc; border-radius:10px;">
+          <p class="mb-3">“The minimalist routine really works — I love the simplicity.”</p>
+          <footer class="blockquote-footer mt-2">Melisa, 31</footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-4">
+        <blockquote class="blockquote p-4 shadow-sm border-0" style="background-color:#fffafc; border-radius:10px;">
+          <p class="mb-3">“Finally found a brand that respects sensitive skin.”</p>
+          <footer class="blockquote-footer mt-2">Aylin, 26</footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div id="nbeautyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="{% static 'nbeauty/urun1.jpg' %}" class="d-block w-100 carousel-img"   alt="Healthy Glow">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Natural Beauty</h5>
+        <p>Simple routines, real results.</p>   
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'nbeauty/urun2.png' %}" class="d-block w-100 carousel-img"  alt="Hydration">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hydration First</h5>
+        <p>Calm, balanced, hydrated skin.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'nbeauty/urun3.jpg' %}" class="d-block w-100 carousel-img"  alt="Clean Care">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clean & Gentle</h5>
+        <p>Care that respects your skin.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'nbeauty/urun4.png' %}" class="d-block w-100 carousel-img"  alt="Clean Care">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clean & Gentle</h5>
+        <p>Care that respects your skin.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'nbeauty/urun5.png' %}" class="d-block w-100 carousel-img"  alt="Clean Care">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clean & Gentle</h5>
+        <p>Care that respects your skin.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<footer class="py-4 text-center bg-dark text-light">
+  <p class="mb-0">© 2025 NBeauty. All rights reserved.</p>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 {%endblock%}

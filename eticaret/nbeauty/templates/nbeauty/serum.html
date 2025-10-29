@@ -1,0 +1,32 @@
+{%extends "base.html" %}
+
+{%block content%}
+{% load static %}
+<div style="background-color: #fff6f8; min-height: 100vh; padding: 40px;">  <!-- 💗 açık pembe ton -->
+<div class="d-flex flex-wrap justify-content-center gap-4">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'nbeauty/serum1png.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Niacinamide</p>
+    <p class="card-text">6$</p>
+    <button type="submit">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'nbeauty/serum4.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Hyaluronic acid</p>
+    <p class="card-text">7$</p>
+    <button type="submit">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'nbeauty/serum3.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Retinol</p>
+    <p class="card-text">13$</p>
+    <button type="submit">Buy</button>
+  </div>
+</div>
+
+{%endblock%}

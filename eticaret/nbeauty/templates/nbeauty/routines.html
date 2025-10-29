@@ -1,5 +1,129 @@
 {%extends "base.html" %}
 
 {%block content%}
-<h1>routines</h1>
+<h1>Routines</h1>
+<div class="accordion accordion-flush" id="skinRoutineAccordion">
+
+  <!-- 1️⃣ Normal Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingNormal">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-normal" aria-expanded="false" aria-controls="flush-normal">
+        Normal Skin Routine
+      </button>
+    </h2>
+    <div id="flush-normal" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Gentle cleanser → Vitamin C serum (10–15%) → Lightweight moisturizer → SPF 30–50.<br>
+        <strong>Evening:</strong> Cleanser → Niacinamide (4–5%) or Hyaluronic acid serum → Moisturizer.<br>
+        <em>Weekly:</em> 1× enzyme peel + 1× hydrating mask.
+      </div>
+    </div>
+  </div>
+
+  <!-- 2️⃣ Dry / Dehydrated Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingDry">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-dry" aria-expanded="false" aria-controls="flush-dry">
+        Dry / Dehydrated Skin Routine
+      </button>
+    </h2>
+    <div id="flush-dry" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Creamy cleanser → Hyaluronic acid + Panthenol serum → Ceramide + Squalane moisturizer → SPF 30–50.<br>
+        <strong>Evening:</strong> Gentle cleanser → Ceramide/Niacinamide serum → Rich moisturizer + optional occlusive.<br>
+        <em>Weekly:</em> 1–2× hydrating mask. Avoid alcohol & harsh surfactants.
+      </div>
+    </div>
+  </div>
+
+  <!-- 3️⃣ Oily Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOily">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-oily" aria-expanded="false" aria-controls="flush-oily">
+        Oily Skin Routine
+      </button>
+    </h2>
+    <div id="flush-oily" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Foaming gel cleanser → Niacinamide (4–10%) or Zinc serum → Gel moisturizer → Matte SPF 30–50.<br>
+        <strong>Evening:</strong> Cleanser → BHA (Salicylic acid 0.5–2%) every other night → Lightweight moisturizer.<br>
+        <em>Weekly:</em> Clay mask on T-zone once. Don’t skip moisturizer!
+      </div>
+    </div>
+  </div>
+
+  <!-- 4️⃣ Combination Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingCombo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-combo" aria-expanded="false" aria-controls="flush-combo">
+        Combination Skin Routine
+      </button>
+    </h2>
+    <div id="flush-combo" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Gel cleanser → Niacinamide serum → Moisturizer (light on T-zone, richer on cheeks) → SPF 30–50.<br>
+        <strong>Evening:</strong> Cleanser → BHA on T-zone, HA/Ceramide serum on cheeks → Moisturizer.<br>
+        <em>Weekly:</em> Multi-masking (clay on T-zone, hydration mask on cheeks).
+      </div>
+    </div>
+  </div>
+
+  <!-- 5️⃣ Sensitive / Redness-Prone Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSensitive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-sensitive" aria-expanded="false" aria-controls="flush-sensitive">
+        Sensitive / Redness-Prone Skin Routine
+      </button>
+    </h2>
+    <div id="flush-sensitive" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Mild fragrance-free cleanser → Panthenol + Centella serum → Ceramide moisturizer → Mineral SPF 30–50.<br>
+        <strong>Evening:</strong> Gentle cleanser → Azulene/Allantoin/β-glucan serum → Ceramide cream.<br>
+        <em>Avoid:</em> Fragrance, alcohol, menthol, strong acids, hot water.
+      </div>
+    </div>
+  </div>
+
+  <!-- 6️⃣ Acne-Prone Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingAcne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-acne" aria-expanded="false" aria-controls="flush-acne">
+        Acne-Prone Skin Routine
+      </button>
+    </h2>
+    <div id="flush-acne" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Gel cleanser → Niacinamide or Azelaic acid (10%) serum → Lightweight moisturizer → SPF 30–50.<br>
+        <strong>Evening:</strong> Alternate nights → (A) BHA 1–2%  or  (B) Retinoid (Adapalene/Retinol) → Moisturizer.<br>
+        <em>Spot treatment:</em> Benzoyl Peroxide 2.5% on blemishes only.
+      </div>
+    </div>
+  </div>
+
+  <!-- 7️⃣ Mature / Aging Skin -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingMature">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#flush-mature" aria-expanded="false" aria-controls="flush-mature">
+        Mature / Aging Skin Routine
+      </button>
+    </h2>
+    <div id="flush-mature" class="accordion-collapse collapse" data-bs-parent="#skinRoutineAccordion">
+      <div class="accordion-body">
+        <strong>Morning:</strong> Gentle cleanser → Vitamin C (10–15%) serum → Ceramide + Peptide moisturizer → SPF 50.<br>
+        <strong>Evening:</strong> Alternate nights → (A) Retinoid (Retinal/Retinol) + Barrier Cream  /  (B) AHA 5–8% or PHA → Moisturizer.<br>
+        <em>Weekly:</em> Hydrating or peptide mask; gentle exfoliation.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
 {%endblock%}
