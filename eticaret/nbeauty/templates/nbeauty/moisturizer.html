@@ -9,9 +9,12 @@
   <div class="card-body">
     <p class="card-text">For every skin</p>
     <p class="card-text">8$</p>
-    <button type="submit">Buy</button>
+    <button type="button" class="btn btn-outline-success">Buy</button>
   </div>
 </div>
+{% if product.image %}
+  <img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid">
+{% endif %}
 
 
 {%endblock%}
